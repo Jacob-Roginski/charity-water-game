@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>charity: water - Clean Water Rush</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="https://www.charitywater.org" target="_blank" rel="noopener noreferrer">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">charity: water</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="https://www.charitywater.org" target="_blank" rel="noopener noreferrer">Mission</a>
+          <a href="https://www.charitywater.org/donate" target="_blank" rel="noopener noreferrer">Donate</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <header class="hero">
+        <div class="hero-copy-wrap">
+          <p class="eyebrow">charity: water mission game</p>
+          <h1>Clean Water Rush</h1>
+          <p class="hero-copy">
+            Catch clean water drops before time runs out. Avoid pollution spills and
+            help fund clean water projects.
+          </p>
+        </div>
+        <div class="hero-accent" aria-hidden="true"></div>
+      </header>
+
+      <section class="control-panel" aria-label="Game controls">
+        <div class="difficulty-wrap" role="group" aria-label="Difficulty mode">
+          <p class="label">Difficulty</p>
+          <button class="difficulty-btn active" data-mode="easy" type="button">
+            Easy
+          </button>
+          <button class="difficulty-btn" data-mode="normal" type="button">
+            Normal
+          </button>
+          <button class="difficulty-btn" data-mode="hard" type="button">
+            Hard
+          </button>
+        </div>
+
+        <div class="hud" aria-live="polite">
+          <div class="stat-card">
+            <p class="stat-label">Score</p>
+            <p class="stat-value" id="scoreValue">0</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Goal</p>
+            <p class="stat-value" id="goalValue">10</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Time</p>
+            <p class="stat-value" id="timeValue">45s</p>
+          </div>
+        </div>
+
+        <button id="startBtn" class="start-btn" type="button">Start Run</button>
+      </section>
+
+      <section class="message-panel" aria-live="polite">
+        <p id="statusMessage">Pick a difficulty and start your run.</p>
+      </section>
+
+      <section id="gameBoard" class="game-board" aria-label="Game board"></section>
+
+      <section class="mission-strip">
+        <h2>Why this matters</h2>
+        <p>
+          703 million people still live without clean water close to home. Every
+          drop you collect in this game is a reminder that small actions can power
+          real impact.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer-links">
+      <a href="https://www.charitywater.org" target="_blank" rel="noopener noreferrer"
+        >Visit charity: water</a
+      >
+      <a
+        href="https://www.charitywater.org/donate"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Donate to clean water projects</a
+      >
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
